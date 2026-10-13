@@ -1,0 +1,23 @@
+@supports (-webkit-appearance: none) {
+    /* Aquí va el CSS para navegadores que soportan WebKit */
+} /*poner esta linea siempre*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: cornflowerblue;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    padding-bottom: 3rem;
+}
+
+.contenedor{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}

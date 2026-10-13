@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tablas.css">
+    <title>Practicas listas</title>
+  </head>
+  <body>
+    <!--cabecera principal con navegacion-->
+    <header class="encabezado-principal">
+      <div class="contenedor-headerflex">
+        <div class="logotipo">
+          <span class="icono-codigo">&lt;/&gt;</span>
+          <span>Dev studio 5F</span>
+        </div>
+        <!--cierre div logotipo -->
+        <!--lista no ordenada UL: menu de navegacion-->
+        <nav>
+          <ul class="menu-nav">
+            <li><a href="#seccion-listas">Listas</a></li>
+            <li><a href="#seccion-tabla">Catalogo semantico</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--cierre contenedor-headerflex-->
+    </header>
+    <main class="contenedor">
+      <!--bloque 1: Demostracion de listas (ul) y (ol)-->
+      <section id="seccion-listas" class="tarjeta">
+        <h2>
+          1. Estructuración con listas(<code>&lt;ul&gt;</code>) y
+          (<code>&lt;ol&gt;</code>)
+        </h2>
+        <p>
+          las listas permiten agrupar información. Usamos listas no ordenadas
+          (ul) cuando la secuencia no importa y listas ordenadas (ol) para
+          procesos y algoritmos paso a paso
+        </p>
+        <div class="grid-listas">
+          <!--LISTA NO ORDENADA-->
+          <div class="caja-lista">
+            <h3>
+              <span class="badge badge-indigo">Unordered list</span> componentes
+              Frond-End
+            </h3>
+            <p class="subtexto">
+              Elementos indispensables para el navegador (orden flexible)
+            </p>
+            <ul class="lista-custom ul-puntos">
+              <li>
+                <strong>HTML5:</strong> Define la estructura y semantica del
+                texto
+              </li>
+              <li>
+                <strong>CSS3:</strong> Aplica diseño, paleta de colores y
+                estilos adaptativos
+              </li>
+              <li>
+                <strong>JavaScript:</strong> Aporta interactividad y logica en
+                tiempo real
+              </li>
+              <li><strong>Assets:</strong> Imagenes web/svg y tipografias</li>
+            </ul>
+          </div>
+          <!--LISTA ORDENADA-->
+          <div class="caja-lista">
+            <h3>
+              <spanc class="badge badge-indigo">Ordered list</spanc> Algoritmo
+              de Maquetación
+            </h3>
+            <p class="subtexto">
+              Secuencia estricta de desarollo (paso a paso)
+            </p>
+            <ol class="lista-custom ol-numerada">
+              <li>Analizar wireframe o prototipo de diseño</li>
+              <li>Escribir el codigo HTML con etiquetas semanticas</li>
+              <li>
+                Vincular la hoja de estilo externa (<code>tablas.css</code>)
+              </li>
+              <li>
+                Configurar las variables de colot el CSS (<code>:root</code>)
+              </li>
+              <li>
+                Aplicar selectores CSS3 para dar estilos a listas y tablas
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section id="seccion-tabla" class="tarjeta">
+        <!--BLOQUE 2 TABLA SEMANTICA CON CONTENIDOS DE ETIQUETAS Y CSS-->
+        <h2>2. Matriz Técnica: Etiquetas Semanticas vs selectores CSS3</h2>
+        <p>
+          Esta tabla utiliza <code>&lt;thead&gt;</code>,
+          <code>&lt;tBody&gt;</code>,
+          <code>&lt;tFood&gt;</code
+          >,<code>&lt;tfood&gt;</code>,<code>colspam</code>,
+          <code>rowspan</code> para organizar la relación de codigo
+        </p>
+        <figure class="contenedor-tabla">
+          <table class="tabla-moderna">
+            <caption>
+              Tabla 1.1: Relación entre la estructura semantica de HTML5 y su
+              selector en CSS3
+            </caption>
+            <!--ENCABEZADO DE LA TABLA-->
+            <thead>
+              <tr>
+                <th scope="col">
+                  <!--celda-->
+                  Tecnología
+                </th>
+                <th scope="col">
+                  <!--celda-->
+                  Etiqueta
+                </th>
+                <th scope="col">
+                  <!--celda-->
+                  Tipo
+                </th>
+                <th scope="col">
+                  <!--celda-->
+                  Funcion Principal
+                </th>
+                <th scope="col">
+                  <!--celda-->
+                  Ejemplo de Sintaxis
+                </th>
+              </tr>
+            </thead>
+            <!-- CUERPO DE LA TABLA -->
+            <tbody>
+              <tr>
+                <td rowspan="3" class="celda-categoria">HTML5 semantico</td>
+                <td><code>&lt;main&gt;</code></td>
+                <td><span class="tag tag-html">Bloque</span></td>
+                <td>
+                  Contenedor del contenido unico y principal del documento
+                </td>
+                <td><code>&lt;main class="contenedor"&gt;</code></td>
+              </tr>
+              <tr>
+                <td><code>&lt;ul&gt;/&lt;ol&gt;</code></td>
+                <td><span class="tag tag-html">Bloque</span></td>
+                <td>
+                  Agrupa items de lista (&lt;li&gt;) de forma viñetada o
+                  numerada
+                </td>
+                <td><code>&lt;ul class="menu"&gt;</code></td>
+              </tr>
+              <tr>
+                <td><code>&lt;table&gt;</code></td>
+                <!--celdas-->
+                <td><span class="tag tag-html">Bloque</span></td>
+                <td>
+                  Estructura matrices de datos mediante filas
+                  (<code>&lt;tr&gt;</code>) y celdas
+                </td>
+                <td><code>&lt;table class="tabla"&gt;</code></td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="celda-categoria alt-categoria">
+                  <!--une 3 filas-->
+                  Selectores CSS3
+                </td>
+                <td><code>.clase</code></td>
+                <td><span class="tag tag-css">Clase</span></td>
+                <td>
+                  Selecciona elementos mediante el atributo
+                  <code>class</code> reutilizable
+                </td>
+                <td><code>.tarjeta {padding: 2rem;}</code></td>
+              </tr>
+              <tr>
+                <td><code>:hover</code></td>
+                <td><span class="tag tag-css">Pseudoclase</span></td>
+                <td>
+                  Aplica estilos cuando el usuario pasa el mouse sobre un
+                  elemento
+                </td>
+                <td><code>tr:hover {background-color:#ffffff}</code></td>
+              </tr>
+              <tr>
+                <td><code>:nth-child(even)</code></td>
+                <td><span class="tag tag-css">Pseudoclase</span></td>
+                <td>
+                  Selecciona filas para automaticamente para crear efecto cebra
+                </td>
+                <td><code>:nth-child(even) {...}</code></td>
+              </tr>
+              <tr>
+                <td colspan="5" class="celda-nota">
+                  <strong>Regla de oro:</strong> HTML5 define la
+                  <em>estructura y el significado</em>; CSS3 controla <em>diseño y la presentación visual </em>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row" colspan="3">Total de conceptos evaluados</th>
+                <td colspan="2">
+                  <strong>6 componentes (3 HTML5 + 3 CSS3)</strong></td>
+              </tr>
+            </tfoot><!--pie de la tabla-->
+          </table>
+          <figcaption>
+            Fuente: Plan de estudios de Programación
+          </figcaption><!---->
+        </figure>
+        <!--figura dividir en la pantalla-->
+      </section>
+    </main>
+    <footer class="pie-pagina">
+      <p>
+        CBTis 49 Construye aplicaciones web | Practica guiada
+      </p>
+    </footer>
+  </body>
+</html>
